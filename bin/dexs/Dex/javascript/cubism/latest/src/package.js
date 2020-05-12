@@ -19,7 +19,7 @@ util.puts(JSON.stringify({
   },
   "devDependencies": {
     "vows": "0.6.1",
-    "uglify-js": "1.2.5"
+    "uglify-js": "2.6.0"
   }
 }
 , null, 2));
