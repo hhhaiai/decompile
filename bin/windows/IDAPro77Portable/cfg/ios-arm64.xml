@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<target version="1.0">
+<feature name="com.apple.debugserver.arm64">
+  <reg name="x0" regnum="0" offset="0" bitsize="64" group="general" altname="arg1" group_id="1" ehframe_regnum="0" dwarf_regnum="0" generic="arg1" invalidate_regnums="0,34"/>
+  <reg name="x1" regnum="1" offset="8" bitsize="64" group="general" altname="arg2" group_id="1" ehframe_regnum="1" dwarf_regnum="1" generic="arg2" invalidate_regnums="1,35"/>
+  <reg name="x2" regnum="2" offset="16" bitsize="64" group="general" altname="arg3" group_id="1" ehframe_regnum="2" dwarf_regnum="2" generic="arg3" invalidate_regnums="2,36"/>
+  <reg name="x3" regnum="3" offset="24" bitsize="64" group="general" altname="arg4" group_id="1" ehframe_regnum="3" dwarf_regnum="3" generic="arg4" invalidate_regnums="3,37"/>
+  <reg name="x4" regnum="4" offset="32" bitsize="64" group="general" altname="arg5" group_id="1" ehframe_regnum="4" dwarf_regnum="4" generic="arg5" invalidate_regnums="4,38"/>
+  <reg name="x5" regnum="5" offset="40" bitsize="64" group="general" altname="arg6" group_id="1" ehframe_regnum="5" dwarf_regnum="5" generic="arg6" invalidate_regnums="5,39"/>
+  <reg name="x6" regnum="6" offset="48" bitsize="64" group="general" altname="arg7" group_id="1" ehframe_regnum="6" dwarf_regnum="6" generic="arg7" invalidate_regnums="6,40"/>
+  <reg name="x7" regnum="7" offset="56" bitsize="64" group="general" altname="arg8" group_id="1" ehframe_regnum="7" dwarf_regnum="7" generic="arg8" invalidate_regnums="7,41"/>
+  <reg name="x8" regnum="8" offset="64" bitsize="64" group="general" group_id="1" ehframe_regnum="8" dwarf_regnum="8" invalidate_regnums="8,42"/>
+  <reg name="x9" regnum="9" offset="72" bitsize="64" group="general" group_id="1" ehframe_regnum="9" dwarf_regnum="9" invalidate_regnums="9,43"/>
+  <reg name="x10" regnum="10" offset="80" bitsize="64" group="general" group_id="1" ehframe_regnum="10" dwarf_regnum="10" invalidate_regnums="10,44"/>
+  <reg name="x11" regnum="11" offset="88" bitsize="64" group="general" group_id="1" ehframe_regnum="11" dwarf_regnum="11" invalidate_regnums="11,45"/>
+  <reg name="x12" regnum="12" offset="96" bitsize="64" group="general" group_id="1" ehframe_regnum="12" dwarf_regnum="12" invalidate_regnums="12,46"/>
+  <reg name="x13" regnum="13" offset="104" bitsize="64" group="general" group_id="1" ehframe_regnum="13" dwarf_regnum="13" invalidate_regnums="13,47"/>
+  <reg name="x14" regnum="14" offset="112" bitsize="64" group="general" group_id="1" ehframe_regnum="14" dwarf_regnum="14" invalidate_regnums="14,48"/>
+  <reg name="x15" regnum="15" offset="120" bitsize="64" group="general" group_id="1" ehframe_regnum="15" dwarf_regnum="15" invalidate_regnums="15,49"/>
+  <reg name="x16" regnum="16" offset="128" bitsize="64" group="general" group_id="1" ehframe_regnum="16" dwarf_regnum="16" invalidate_regnums="16,50"/>
+  <reg name="x17" regnum="17" offset="136" bitsize="64" group="general" group_id="1" ehframe_regnum="17" dwarf_regnum="17" invalidate_regnums="17,51"/>
+  <reg name="x18" regnum="18" offset="144" bitsize="64" group="general" group_id="1" ehframe_regnum="18" dwarf_regnum="18" invalidate_regnums="18,52"/>
+  <reg name="x19" regnum="19" offset="152" bitsize="64" group="general" group_id="1" ehframe_regnum="19" dwarf_regnum="19" invalidate_regnums="19,53"/>
+  <reg name="x20" regnum="20" offset="160" bitsize="64" group="general" group_id="1" ehframe_regnum="20" dwarf_regnum="20" invalidate_regnums="20,54"/>
+  <reg name="x21" regnum="21" offset="168" bitsize="64" group="general" group_id="1" ehframe_regnum="21" dwarf_regnum="21" invalidate_regnums="21,55"/>
+  <reg name="x22" regnum="22" offset="176" bitsize="64" group="general" group_id="1" ehframe_regnum="22" dwarf_regnum="22" invalidate_regnums="22,56"/>
+  <reg name="x23" regnum="23" offset="184" bitsize="64" group="general" group_id="1" ehframe_regnum="23" dwarf_regnum="23" invalidate_regnums="23,57"/>
+  <reg name="x24" regnum="24" offset="192" bitsize="64" group="general" group_id="1" ehframe_regnum="24" dwarf_regnum="24" invalidate_regnums="24,58"/>
+  <reg name="x25" regnum="25" offset="200" bitsize="64" group="general" group_id="1" ehframe_regnum="25" dwarf_regnum="25" invalidate_regnums="25,59"/>
+  <reg name="x26" regnum="26" offset="208" bitsize="64" group="general" group_id="1" ehframe_regnum="26" dwarf_regnum="26" invalidate_regnums="26,60"/>
+  <reg name="x27" regnum="27" offset="216" bitsize="64" group="general" group_id="1" ehframe_regnum="27" dwarf_regnum="27" invalidate_regnums="27,61"/>
+  <reg name="x28" regnum="28" offset="224" bitsize="64" group="general" group_id="1" ehframe_regnum="28" dwarf_regnum="28" invalidate_regnums="28,62"/>
+  <reg name="fp" regnum="29" offset="232" bitsize="64" group="general" altname="x29" group_id="1" ehframe_regnum="29" dwarf_regnum="29" generic="fp"/>
+  <reg name="lr" regnum="30" offset="240" bitsize="64" group="general" altname="x30" group_id="1" ehframe_regnum="30" dwarf_regnum="30" generic="ra"/>
+  <reg name="sp" regnum="31" offset="248" bitsize="64" group="general" altname="xsp" group_id="1" ehframe_regnum="31" dwarf_regnum="31" generic="sp"/>
+  <reg name="pc" regnum="32" offset="256" bitsize="64" group="general" group_id="1" ehframe_regnum="32" dwarf_regnum="32" generic="pc"/>
+  <reg name="cpsr" regnum="33" offset="264" bitsize="32" group="general" altname="flags" group_id="1" ehframe_regnum="33" dwarf_regnum="33"/>
+  <reg name="w0" regnum="34" offset="0" bitsize="32" group="general" group_id="1" value_regnums="0" invalidate_regnums="0,34"/>
+  <reg name="w1" regnum="35" offset="8" bitsize="32" group="general" group_id="1" value_regnums="1" invalidate_regnums="1,35"/>
+  <reg name="w2" regnum="36" offset="16" bitsize="32" group="general" group_id="1" value_regnums="2" invalidate_regnums="2,36"/>
+  <reg name="w3" regnum="37" offset="24" bitsize="32" group="general" group_id="1" value_regnums="3" invalidate_regnums="3,37"/>
+  <reg name="w4" regnum="38" offset="32" bitsize="32" group="general" group_id="1" value_regnums="4" invalidate_regnums="4,38"/>
+  <reg name="w5" regnum="39" offset="40" bitsize="32" group="general" group_id="1" value_regnums="5" invalidate_regnums="5,39"/>
+  <reg name="w6" regnum="40" offset="48" bitsize="32" group="general" group_id="1" value_regnums="6" invalidate_regnums="6,40"/>
+  <reg name="w7" regnum="41" offset="56" bitsize="32" group="general" group_id="1" value_regnums="7" invalidate_regnums="7,41"/>
+  <reg name="w8" regnum="42" offset="64" bitsize="32" group="general" group_id="1" value_regnums="8" invalidate_regnums="8,42"/>
+  <reg name="w9" regnum="43" offset="72" bitsize="32" group="general" group_id="1" value_regnums="9" invalidate_regnums="9,43"/>
+  <reg name="w10" regnum="44" offset="80" bitsize="32" group="general" group_id="1" value_regnums="10" invalidate_regnums="10,44"/>
+  <reg name="w11" regnum="45" offset="88" bitsize="32" group="general" group_id="1" value_regnums="11" invalidate_regnums="11,45"/>
+  <reg name="w12" regnum="46" offset="96" bitsize="32" group="general" group_id="1" value_regnums="12" invalidate_regnums="12,46"/>
+  <reg name="w13" regnum="47" offset="104" bitsize="32" group="general" group_id="1" value_regnums="13" invalidate_regnums="13,47"/>
+  <reg name="w14" regnum="48" offset="112" bitsize="32" group="general" group_id="1" value_regnums="14" invalidate_regnums="14,48"/>
+  <reg name="w15" regnum="49" offset="120" bitsize="32" group="general" group_id="1" value_regnums="15" invalidate_regnums="15,49"/>
+  <reg name="w16" regnum="50" offset="128" bitsize="32" group="general" group_id="1" value_regnums="16" invalidate_regnums="16,50"/>
+  <reg name="w17" regnum="51" offset="136" bitsize="32" group="general" group_id="1" value_regnums="17" invalidate_regnums="17,51"/>
+  <reg name="w18" regnum="52" offset="144" bitsize="32" group="general" group_id="1" value_regnums="18" invalidate_regnums="18,52"/>
+  <reg name="w19" regnum="53" offset="152" bitsize="32" group="general" group_id="1" value_regnums="19" invalidate_regnums="19,53"/>
+  <reg name="w20" regnum="54" offset="160" bitsize="32" group="general" group_id="1" value_regnums="20" invalidate_regnums="20,54"/>
+  <reg name="w21" regnum="55" offset="168" bitsize="32" group="general" group_id="1" value_regnums="21" invalidate_regnums="21,55"/>
+  <reg name="w22" regnum="56" offset="176" bitsize="32" group="general" group_id="1" value_regnums="22" invalidate_regnums="22,56"/>
+  <reg name="w23" regnum="57" offset="184" bitsize="32" group="general" group_id="1" value_regnums="23" invalidate_regnums="23,57"/>
+  <reg name="w24" regnum="58" offset="192" bitsize="32" group="general" group_id="1" value_regnums="24" invalidate_regnums="24,58"/>
+  <reg name="w25" regnum="59" offset="200" bitsize="32" group="general" group_id="1" value_regnums="25" invalidate_regnums="25,59"/>
+  <reg name="w26" regnum="60" offset="208" bitsize="32" group="general" group_id="1" value_regnums="26" invalidate_regnums="26,60"/>
+  <reg name="w27" regnum="61" offset="216" bitsize="32" group="general" group_id="1" value_regnums="27" invalidate_regnums="27,61"/>
+  <reg name="w28" regnum="62" offset="224" bitsize="32" group="general" group_id="1" value_regnums="28" invalidate_regnums="28,62"/>
+  <reg name="v0" regnum="63" offset="268" bitsize="128" group="vector" type="float" altname="q0" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="64" invalidate_regnums="63,129,97"/>
+  <reg name="v1" regnum="64" offset="284" bitsize="128" group="vector" type="float" altname="q1" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="65" invalidate_regnums="64,130,98"/>
+  <reg name="v2" regnum="65" offset="300" bitsize="128" group="vector" type="float" altname="q2" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="66" invalidate_regnums="65,131,99"/>
+  <reg name="v3" regnum="66" offset="316" bitsize="128" group="vector" type="float" altname="q3" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="67" invalidate_regnums="66,132,100"/>
+  <reg name="v4" regnum="67" offset="332" bitsize="128" group="vector" type="float" altname="q4" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="68" invalidate_regnums="67,133,101"/>
+  <reg name="v5" regnum="68" offset="348" bitsize="128" group="vector" type="float" altname="q5" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="69" invalidate_regnums="68,134,102"/>
+  <reg name="v6" regnum="69" offset="364" bitsize="128" group="vector" type="float" altname="q6" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="70" invalidate_regnums="69,135,103"/>
+  <reg name="v7" regnum="70" offset="380" bitsize="128" group="vector" type="float" altname="q7" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="71" invalidate_regnums="70,136,104"/>
+  <reg name="v8" regnum="71" offset="396" bitsize="128" group="vector" type="float" altname="q8" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="72" invalidate_regnums="71,137,105"/>
+  <reg name="v9" regnum="72" offset="412" bitsize="128" group="vector" type="float" altname="q9" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="73" invalidate_regnums="72,138,106"/>
+  <reg name="v10" regnum="73" offset="428" bitsize="128" group="vector" type="float" altname="q10" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="74" invalidate_regnums="73,139,107"/>
+  <reg name="v11" regnum="74" offset="444" bitsize="128" group="vector" type="float" altname="q11" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="75" invalidate_regnums="74,140,108"/>
+  <reg name="v12" regnum="75" offset="460" bitsize="128" group="vector" type="float" altname="q12" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="76" invalidate_regnums="75,141,109"/>
+  <reg name="v13" regnum="76" offset="476" bitsize="128" group="vector" type="float" altname="q13" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="77" invalidate_regnums="76,142,110"/>
+  <reg name="v14" regnum="77" offset="492" bitsize="128" group="vector" type="float" altname="q14" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="78" invalidate_regnums="77,143,111"/>
+  <reg name="v15" regnum="78" offset="508" bitsize="128" group="vector" type="float" altname="q15" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="79" invalidate_regnums="78,144,112"/>
+  <reg name="v16" regnum="79" offset="524" bitsize="128" group="vector" type="float" altname="q16" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="80" invalidate_regnums="79,145,113"/>
+  <reg name="v17" regnum="80" offset="540" bitsize="128" group="vector" type="float" altname="q17" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="81" invalidate_regnums="80,146,114"/>
+  <reg name="v18" regnum="81" offset="556" bitsize="128" group="vector" type="float" altname="q18" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="82" invalidate_regnums="81,147,115"/>
+  <reg name="v19" regnum="82" offset="572" bitsize="128" group="vector" type="float" altname="q19" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="83" invalidate_regnums="82,148,116"/>
+  <reg name="v20" regnum="83" offset="588" bitsize="128" group="vector" type="float" altname="q20" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="84" invalidate_regnums="83,149,117"/>
+  <reg name="v21" regnum="84" offset="604" bitsize="128" group="vector" type="float" altname="q21" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="85" invalidate_regnums="84,150,118"/>
+  <reg name="v22" regnum="85" offset="620" bitsize="128" group="vector" type="float" altname="q22" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="86" invalidate_regnums="85,151,119"/>
+  <reg name="v23" regnum="86" offset="636" bitsize="128" group="vector" type="float" altname="q23" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="87" invalidate_regnums="86,152,120"/>
+  <reg name="v24" regnum="87" offset="652" bitsize="128" group="vector" type="float" altname="q24" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="88" invalidate_regnums="87,153,121"/>
+  <reg name="v25" regnum="88" offset="668" bitsize="128" group="vector" type="float" altname="q25" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="89" invalidate_regnums="88,154,122"/>
+  <reg name="v26" regnum="89" offset="684" bitsize="128" group="vector" type="float" altname="q26" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="90" invalidate_regnums="89,155,123"/>
+  <reg name="v27" regnum="90" offset="700" bitsize="128" group="vector" type="float" altname="q27" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="91" invalidate_regnums="90,156,124"/>
+  <reg name="v28" regnum="91" offset="716" bitsize="128" group="vector" type="float" altname="q28" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="92" invalidate_regnums="91,157,125"/>
+  <reg name="v29" regnum="92" offset="732" bitsize="128" group="vector" type="float" altname="q29" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="93" invalidate_regnums="92,158,126"/>
+  <reg name="v30" regnum="93" offset="748" bitsize="128" group="vector" type="float" altname="q30" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="94" invalidate_regnums="93,159,127"/>
+  <reg name="v31" regnum="94" offset="764" bitsize="128" group="vector" type="float" altname="q31" encoding="vector" format="vector-uint8" group_id="2" dwarf_regnum="95" invalidate_regnums="94,160,128"/>
+  <reg name="fpsr" regnum="95" offset="780" bitsize="32" group="general" group_id="2"/>
+  <reg name="fpcr" regnum="96" offset="784" bitsize="32" group="general" group_id="2"/>
+  <reg name="s0" regnum="97" offset="268" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="63" invalidate_regnums="63,129,97"/>
+  <reg name="s1" regnum="98" offset="284" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="64" invalidate_regnums="64,130,98"/>
+  <reg name="s2" regnum="99" offset="300" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="65" invalidate_regnums="65,131,99"/>
+  <reg name="s3" regnum="100" offset="316" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="66" invalidate_regnums="66,132,100"/>
+  <reg name="s4" regnum="101" offset="332" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="67" invalidate_regnums="67,133,101"/>
+  <reg name="s5" regnum="102" offset="348" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="68" invalidate_regnums="68,134,102"/>
+  <reg name="s6" regnum="103" offset="364" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="69" invalidate_regnums="69,135,103"/>
+  <reg name="s7" regnum="104" offset="380" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="70" invalidate_regnums="70,136,104"/>
+  <reg name="s8" regnum="105" offset="396" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="71" invalidate_regnums="71,137,105"/>
+  <reg name="s9" regnum="106" offset="412" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="72" invalidate_regnums="72,138,106"/>
+  <reg name="s10" regnum="107" offset="428" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="73" invalidate_regnums="73,139,107"/>
+  <reg name="s11" regnum="108" offset="444" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="74" invalidate_regnums="74,140,108"/>
+  <reg name="s12" regnum="109" offset="460" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="75" invalidate_regnums="75,141,109"/>
+  <reg name="s13" regnum="110" offset="476" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="76" invalidate_regnums="76,142,110"/>
+  <reg name="s14" regnum="111" offset="492" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="77" invalidate_regnums="77,143,111"/>
+  <reg name="s15" regnum="112" offset="508" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="78" invalidate_regnums="78,144,112"/>
+  <reg name="s16" regnum="113" offset="524" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="79" invalidate_regnums="79,145,113"/>
+  <reg name="s17" regnum="114" offset="540" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="80" invalidate_regnums="80,146,114"/>
+  <reg name="s18" regnum="115" offset="556" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="81" invalidate_regnums="81,147,115"/>
+  <reg name="s19" regnum="116" offset="572" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="82" invalidate_regnums="82,148,116"/>
+  <reg name="s20" regnum="117" offset="588" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="83" invalidate_regnums="83,149,117"/>
+  <reg name="s21" regnum="118" offset="604" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="84" invalidate_regnums="84,150,118"/>
+  <reg name="s22" regnum="119" offset="620" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="85" invalidate_regnums="85,151,119"/>
+  <reg name="s23" regnum="120" offset="636" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="86" invalidate_regnums="86,152,120"/>
+  <reg name="s24" regnum="121" offset="652" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="87" invalidate_regnums="87,153,121"/>
+  <reg name="s25" regnum="122" offset="668" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="88" invalidate_regnums="88,154,122"/>
+  <reg name="s26" regnum="123" offset="684" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="89" invalidate_regnums="89,155,123"/>
+  <reg name="s27" regnum="124" offset="700" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="90" invalidate_regnums="90,156,124"/>
+  <reg name="s28" regnum="125" offset="716" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="91" invalidate_regnums="91,157,125"/>
+  <reg name="s29" regnum="126" offset="732" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="92" invalidate_regnums="92,158,126"/>
+  <reg name="s30" regnum="127" offset="748" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="93" invalidate_regnums="93,159,127"/>
+  <reg name="s31" regnum="128" offset="764" bitsize="32" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="94" invalidate_regnums="94,160,128"/>
+  <reg name="d0" regnum="129" offset="268" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="63" invalidate_regnums="63,129,97"/>
+  <reg name="d1" regnum="130" offset="284" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="64" invalidate_regnums="64,130,98"/>
+  <reg name="d2" regnum="131" offset="300" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="65" invalidate_regnums="65,131,99"/>
+  <reg name="d3" regnum="132" offset="316" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="66" invalidate_regnums="66,132,100"/>
+  <reg name="d4" regnum="133" offset="332" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="67" invalidate_regnums="67,133,101"/>
+  <reg name="d5" regnum="134" offset="348" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="68" invalidate_regnums="68,134,102"/>
+  <reg name="d6" regnum="135" offset="364" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="69" invalidate_regnums="69,135,103"/>
+  <reg name="d7" regnum="136" offset="380" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="70" invalidate_regnums="70,136,104"/>
+  <reg name="d8" regnum="137" offset="396" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="71" invalidate_regnums="71,137,105"/>
+  <reg name="d9" regnum="138" offset="412" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="72" invalidate_regnums="72,138,106"/>
+  <reg name="d10" regnum="139" offset="428" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="73" invalidate_regnums="73,139,107"/>
+  <reg name="d11" regnum="140" offset="444" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="74" invalidate_regnums="74,140,108"/>
+  <reg name="d12" regnum="141" offset="460" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="75" invalidate_regnums="75,141,109"/>
+  <reg name="d13" regnum="142" offset="476" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="76" invalidate_regnums="76,142,110"/>
+  <reg name="d14" regnum="143" offset="492" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="77" invalidate_regnums="77,143,111"/>
+  <reg name="d15" regnum="144" offset="508" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="78" invalidate_regnums="78,144,112"/>
+  <reg name="d16" regnum="145" offset="524" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="79" invalidate_regnums="79,145,113"/>
+  <reg name="d17" regnum="146" offset="540" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="80" invalidate_regnums="80,146,114"/>
+  <reg name="d18" regnum="147" offset="556" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="81" invalidate_regnums="81,147,115"/>
+  <reg name="d19" regnum="148" offset="572" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="82" invalidate_regnums="82,148,116"/>
+  <reg name="d20" regnum="149" offset="588" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="83" invalidate_regnums="83,149,117"/>
+  <reg name="d21" regnum="150" offset="604" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="84" invalidate_regnums="84,150,118"/>
+  <reg name="d22" regnum="151" offset="620" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="85" invalidate_regnums="85,151,119"/>
+  <reg name="d23" regnum="152" offset="636" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="86" invalidate_regnums="86,152,120"/>
+  <reg name="d24" regnum="153" offset="652" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="87" invalidate_regnums="87,153,121"/>
+  <reg name="d25" regnum="154" offset="668" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="88" invalidate_regnums="88,154,122"/>
+  <reg name="d26" regnum="155" offset="684" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="89" invalidate_regnums="89,155,123"/>
+  <reg name="d27" regnum="156" offset="700" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="90" invalidate_regnums="90,156,124"/>
+  <reg name="d28" regnum="157" offset="716" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="91" invalidate_regnums="91,157,125"/>
+  <reg name="d29" regnum="158" offset="732" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="92" invalidate_regnums="92,158,126"/>
+  <reg name="d30" regnum="159" offset="748" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="93" invalidate_regnums="93,159,127"/>
+  <reg name="d31" regnum="160" offset="764" bitsize="64" group="float" type="float" encoding="ieee754" format="float" group_id="2" value_regnums="94" invalidate_regnums="94,160,128"/>
+  <reg name="far" regnum="161" offset="788" bitsize="64" group="general" group_id="3"/>
+  <reg name="esr" regnum="162" offset="796" bitsize="32" group="general" group_id="3"/>
+  <reg name="exception" regnum="163" offset="800" bitsize="32" group="general" group_id="3"/>
+</feature>
+<groups>
+  <group id="1" name="General Purpose Registers"/>
+  <group id="2" name="Floating Point Registers"/>
+  <group id="3" name="Exception State Registers"/>
+</groups>
+</target>

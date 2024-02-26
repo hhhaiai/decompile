@@ -1,0 +1,13 @@
+// This file was contributed to us by an IDA user.
+
+// Hangul Syllables
+// Hangul Jamo
+// Hangul Compatibility Jamo
+// Hangul Jamo Extended-A
+// Hangul Jamo Extended-B
+
+uAC00..uD7A3,
+u1100..u11FF,
+u3130..u318F,
+uA960..uA97F,
+uD7B0..uD7FF;

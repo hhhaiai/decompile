@@ -1,0 +1,64 @@
+IDA Pro 7.7.220118 (SP1) 绿色版由 Binwalker 基于 Think-Cell Operations GmbH 公司泄露版本和 TOM_RUS 的 Keygen 方案制作，包含全套 Hex-Rays Decompiler 插件（部分为老版本添加而来），解压后运行【IDA_绿化工具.exe】即可一键绿化，默认配置为绿色版 Python 3.8.10
+
+【需要注意】
+    1. 路径不能含有中文
+    2. 使用绿色版 Python 安装插件的时，务必使用【-m】参数来指定以导入模块方式运行 pip，如：python.exe -m pip install + 包名
+    3. 根目录下的【idapyswitch.exe】可以切换 Python 版本，但请注意切换到非绿色版 Python 后需要自行安装插件所需的依赖
+    4. 根目录下的【SDK77.7z】为 IDA 7.7 SDK
+    5. 根目录下的【Kengen.7z】为 IDA 7.7 Key 生成程序
+
+【修改说明】
+    1. 增加了一些常用插件，如 Keypatch、Findcrypt、LazyIDA 等
+    2. 修改了一些默认配置
+    3. 由 Binwalker 制作绿化工具，功能包含：绿化 Python 3.8.10、禁用 IDA 自动联网、设置 IDA 桌面快捷方式
+    4. 修改文件：
+        ida.dll
+            0027AA97 10 --> 00
+            00383CF3 5C --> C8
+        ida64.dll
+            00283695 10 --> 00
+            0038CE63 5C --> C8
+        cfg/ida.cfg
+            增加：
+                GB2312: Chinese
+            修改：
+                STORE_USER_INFO = YES --> NO
+                OPCODE_BYTES = 0 --> 10
+                INDENTION = 16 --> 0
+                MAX_DATALINE_LENGTH = 70 --> 100
+                SHOW_BASIC_BLOCKS = NO --> YES
+                SHOW_XREFS = 2 --> 15
+                SHOW_SOURCE_LINNUM = NO --> YES
+        cfg/Chinese.clt
+            增加：
+                u2000..u206F,
+                u3000..u303F,
+    5. 新增文件：
+        cfg/
+            hexray5.cfg
+            hexray6.cfg
+        plugins/
+            patching/
+            auto_re.py
+            findcrypt3.py
+            findcrypt3.rules
+            hexarm.dll
+            hexmips.dll
+            hexppc.dll
+            hexppc64.dll
+            IDA_Signsrch.dll
+            IDA_Signsrch64.dll
+            keypatch.py
+            LazyIDA.py
+            patching.py
+            signsrch.xml
+            StrongCC.dll
+            StrongCC_x64.dll
+        python38/
+        ida.key
+        IDA77_绿化工具.exe
+        Keygen.7z
+        SDK77.7z
+        使用说明.txt
+
+※ 该文件仅作学习交流使用，不得用于商业或者非法用途，请测试后尽快删除，购买正版进行支持

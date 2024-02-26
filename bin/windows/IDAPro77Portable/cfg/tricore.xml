@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE target SYSTEM "gdb-target.dtd">
+<target>
+  <architecture>tricore</architecture>
+  <xi:include href="tricore-core.xml"/>
+</target>

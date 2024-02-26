@@ -1,0 +1,151 @@
+;
+;       This file contains IDS file names for
+;       modules with strange names, like "ld-linux.so.1"
+;       Format is:
+;         <module_name> <ids_name>  +/- <til_files>
+;
+;       If there is a '-' sign after the replacement name, then
+;       imports by ordinals will not be used for the IDS file
+;
+;       If there are any til files, they will be loaded automatically
+;       when the ids file gets loaded
+;       The til files may have conditional expressions in the following form:
+;
+;               condition ? til-files : til-files;
+;
+;       which works like C ternary operator.
+;       The conditional expressions may be nested.
+;       2 condition types are supported:
+;          name - will be checked against the current processor module name
+;          number - will be checked against the bitness of the program
+;                   2 bitnesses are supported: 32 and 64
+;
+
+libc.so.5       libc.ids +
+
+; MS Windows system DLLs should not be imported by ordinals because they are
+; different for different platforms:
+
+advapi32.ids   advapi32.ids   -
+audwin32.ids   audwin32.ids   +
+avicap32.ids   avicap32.ids   +
+avifil32.ids   avifil32.ids   -
+aweman32.ids   aweman32.ids   +
+calwin32.ids   calwin32.ids   +
+cfgmgr32.ids   cfgmgr32.ids   -
+clnwin32.ids   clnwin32.ids   +
+clxwin32.ids   clxwin32.ids   +
+comctl32.ids   comctl32.ids   +
+comdlg32.ids   comdlg32.ids   +
+commtb32.ids   commtb32.ids   -
+crypt32.ids    crypt32.ids    +
+ctl3d32.ids    ctl3d32.ids    -
+d3drg32f.ids   d3drg32f.ids   +
+d3drm32f.ids   d3drm32f.ids   +
+dciman32.ids   dciman32.ids   -
+ds32gt.ids     ds32gt.ids     +
+gdi32.ids      gdi32.ids      +
+glmf32.ids     glmf32.ids     +
+glu32.ids      glu32.ids      -
+gswag32.ids    gswag32.ids    +
+gswdll32.ids   gswdll32.ids   +
+hpscan32.ids   hpscan32.ids   +
+icm32.ids      icm32.ids      -
+imm32.ids      imm32.ids      -
+ir32_32.ids    ir32_32.ids    -
+jpeg1x32.ids   jpeg1x32.ids   +
+jpeg2x32.ids   jpeg2x32.ids   +
+kernel32.ids   kernel32.ids   -
+locwin32.ids   locwin32.ids   +
+lz32.ids       lz32.ids       -
+mapi32.ids     mapi32.ids     -
+mcdsrv32.ids   mcdsrv32.ids   +
+mciavi32.ids   mciavi32.ids   +
+mciole32.ids   mciole32.ids   +
+mf3216.ids     mf3216.ids     -
+mfcans32.ids   mfcans32.ids   -
+msacm32.ids    msacm32.ids    -
+msjint32.ids   msjint32.ids   +
+msjter32.ids   msjter32.ids   +
+msrd2x32.ids   msrd2x32.ids   +
+msrle32.ids    msrle32.ids    -
+msvfw32.ids    msvfw32.ids    -
+msvidc32.ids   msvidc32.ids   +
+ncpwin32.ids   ncpwin32.ids   +
+nddenb32.ids   nddenb32.ids   +
+netapi32.ids   netapi32.ids   -
+netwin32.ids   netwin32.ids   +
+nls32.ids      nls32.ids      +
+nlsapi32.ids   nlsapi32.ids   +
+odbc32.ids     odbc32.ids     +
+odbc32gt.ids   odbc32gt.ids   +
+odbccp32.ids   odbccp32.ids   +
+odbccr32.ids   odbccr32.ids   +
+odbcji32.ids   odbcji32.ids   +
+odbcjt32.ids   odbcjt32.ids   +
+odbctl32.ids   odbctl32.ids   +
+ole32.ids      ole32.ids      +
+oleaut32.ids   oleaut32.ids   +
+olecli32.ids   olecli32.ids   -
+olecnv32.ids   olecnv32.ids   -
+olepro32.ids   olepro32.ids   -
+olesvr32.ids   olesvr32.ids   -
+olethk32.ids   olethk32.ids   -
+opengl32.ids   opengl32.ids   +
+prtwin32.ids   prtwin32.ids   +
+pubole32.ids   pubole32.ids   +
+rasfil32.ids   rasfil32.ids   +
+rshx32.ids     rshx32.ids     +
+shell32.ids    shell32.ids    +
+snapin32.ids   snapin32.ids   +
+sndsys32.ids   sndsys32.ids   +
+tapi32.ids     tapi32.ids     -
+tsd32.ids      tsd32.ids      -
+user32.ids     user32.ids     +
+vbajet32.ids   vbajet32.ids   -
+vbar332.ids    vbar332.ids    +
+vcfidl32.ids   vcfidl32.ids   +
+vcfiwz32.ids   vcfiwz32.ids   +
+vspell32.ids   vspell32.ids   +
+win32s16.ids   win32s16.ids   +
+winmem32.ids   winmem32.ids   +
+wow32.ids      wow32.ids      -
+ws2_32.ids     ws2_32.ids     -
+wsihk32.ids    wsihk32.ids    -
+wsiwin32.ids   wsiwin32.ids   -
+wsock32.ids    wsock32.ids    -
+wsock32n.ids   wsock32n.ids   -
+
+hal.ids        hal.ids        +
+ntoskrnl.ids   ntoskrnl.ids   -
+ntdll.ids      ntdll.ids      -
+
+; Windows CE files:
+
+mfcce211d.ids           mfcce2~1.ids +
+mscecomdlg.ids          msceco~1.ids +
+mscecommandbar.ids      msceco~2.ids +
+msceimage.ids           msceim~1.ids +
+msceimagelist.ids       msceim~2.ids +
+mscelistview.ids        msceli~1.ids +
+mscepicture.ids         mscepi~1.ids +
+mscetabstrip.ids        msceta~1.ids +
+mscetreeview.ids        mscetr~1.ids +
+mscewinsock.ids         mscewi~1.ids +
+oleaut32m.ids           oleaut~1.ids +
+olece211d.ids           olece2~1.ids +
+riched20m.ids           riched~1.ids +
+toolhelpm.ids           toolhe~1.ids +
+coredll.ids             coredll.ids + arm ? wince;
+
+;
+;       Also here are IDS names for FLIRT signatures
+;       (a flirt sig file may have a companion ids file which
+;        contains comments and other useful information about
+;        the functions from the sig file)
+;
+
+tpwin.sig               tp.ids +
+tpdll.sig               tp.ids +
+tpdos.sig               tp.ids +
+tpdpmi.sig              tp.ids +

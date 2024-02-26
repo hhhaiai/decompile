@@ -1,0 +1,18 @@
+// This file was composed from https://en.wikipedia.org/wiki/Windows-1254,
+// and might not contain all required codepoints to support this culture.
+// Please contact us on <support@hex-rays.com> if you have ideas how to
+// improve it.
+u00C0..u00CF,
+u011E,
+u011F,
+u00D1..u00DC,
+-u00D7,
+u0130,
+u015E,
+u00DF,
+u00E0..u00EF,
+u011F,
+u00F1..u00FC,
+-u00F7,
+u0131,
+u015F;

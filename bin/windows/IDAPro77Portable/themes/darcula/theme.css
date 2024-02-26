@@ -1,0 +1,179 @@
+/* Darcula theme, inspired by JetBrains products, contributed by user kcudnik */
+
+@importtheme "_base";
+
+@def darcula_highlight_color rgba(80, 80, 00, 0.80);
+
+CustomIDAMemo
+{
+    qproperty-line-fg-default: yellow;
+    qproperty-line-fg-regular-comment: #0080C0;
+    qproperty-line-fg-repeatable-comment: silver;
+    qproperty-line-fg-automatic-comment: #0080C0;
+    qproperty-line-fg-insn: silver;
+    qproperty-line-fg-dummy-data-name: silver;
+    qproperty-line-fg-regular-data-name: #FFFF7F;
+    qproperty-line-fg-demangled-name: #0080C0;
+    qproperty-line-fg-punctuation: silver;
+    qproperty-line-fg-charlit-in-insn: lime;
+    qproperty-line-fg-numlit-in-insn: #55FFFF;
+    qproperty-line-fg-void-opnd: red;
+    qproperty-line-fg-code-xref: lime;
+    qproperty-line-fg-data-xref: #55FFFF;
+    qproperty-line-fg-error: red;
+    qproperty-line-fg-opcode-byte: white;
+    qproperty-line-fg-extra-line: yellow;
+    qproperty-line-fg-alt-opnd: white;
+    qproperty-line-fg-hidden: silver;
+    qproperty-line-fg-libfunc: #55FFFF;
+    qproperty-line-fg-locvar: lime;
+    qproperty-line-fg-dummy-code-name: teal;
+    qproperty-line-fg-asm-directive: yellow;
+    qproperty-line-fg-macro: #8080FF;
+    qproperty-line-fg-strlit-in-data: lime;
+    qproperty-line-fg-charlit-in-data: lime;
+    qproperty-line-fg-numlit-in-data: #55FFFF;
+    qproperty-line-fg-keyword: silver;
+    qproperty-line-fg-register-name: #8080C0;
+    qproperty-line-fg-import-name: #FF0080;
+    qproperty-line-fg-segment-name: yellow;
+    qproperty-line-fg-dummy-unknown-name: silver;
+    qproperty-line-fg-code-name: #FF0080;
+    qproperty-line-fg-unknown-name: yellow;
+    qproperty-line-fg-collapsed-line: yellow;
+    qproperty-line-bg-default: black;
+    qproperty-line-bg-selected: silver;
+    qproperty-line-bg-highlight: ${darcula_highlight_color};
+    qproperty-line-bg-highlight-2: rgba(100, 60, 0, 0.80);
+    qproperty-line-bg-highlight-3: rgba(120, 0, 120, 0.80);
+    qproperty-line-bg-highlight-4: rgba(0, 120, 120, 0.80);
+    qproperty-line-bg-highlight-5: rgba(120, 0, 0, 0.80);
+    qproperty-line-bg-highlight-6: rgba(0, 80, 0, 0.80);
+    qproperty-line-bg-highlight-7: rgba(0, 40, 120, 0.80);
+    qproperty-line-bg-highlight-8: rgba(100, 100, 100, 0.80);
+    qproperty-line-pfx-func: silver;
+    qproperty-line-pfx-insn: gray;
+    qproperty-line-pfx-data: silver;
+    qproperty-line-pfx-unexplored: gray;
+    qproperty-line-bgovl-current-line: rgba(0, 0, 0, 0.149020);
+    qproperty-line-pfx-current-line: #FFFF00;
+    qproperty-line-bgovl-bookmark: rgba(0, 255, 128, 0.211);
+    qproperty-bookmark-star-outline: white;
+}
+
+CustomIDAMemo[debugging="true"]
+{
+    qproperty-line-fg-default: yellow;
+    qproperty-line-fg-regular-comment: #0080C0;
+    qproperty-line-fg-repeatable-comment: silver;
+    qproperty-line-fg-automatic-comment: #0080C0;
+    qproperty-line-fg-insn: silver;
+    qproperty-line-fg-dummy-data-name: silver;
+    qproperty-line-fg-regular-data-name: #FFFF7F;
+    qproperty-line-fg-demangled-name: #0080C0;
+    qproperty-line-fg-punctuation: silver;
+    qproperty-line-fg-charlit-in-insn: lime;
+    qproperty-line-fg-numlit-in-insn: #55FFFF;
+    qproperty-line-fg-void-opnd: red;
+    qproperty-line-fg-code-xref: lime;
+    qproperty-line-fg-data-xref: #55FFFF;
+    qproperty-line-fg-error: red;
+    qproperty-line-fg-opcode-byte: white;
+    qproperty-line-fg-extra-line: yellow;
+    qproperty-line-fg-alt-opnd: white;
+    qproperty-line-fg-hidden: silver;
+    qproperty-line-fg-libfunc: #55FFFF;
+    qproperty-line-fg-locvar: lime;
+    qproperty-line-fg-dummy-code-name: teal;
+    qproperty-line-fg-asm-directive: yellow;
+    qproperty-line-fg-macro: #8080FF;
+    qproperty-line-fg-strlit-in-data: lime;
+    qproperty-line-fg-charlit-in-data: lime;
+    qproperty-line-fg-numlit-in-data: #55FFFF;
+    qproperty-line-fg-keyword: silver;
+    qproperty-line-fg-register-name: #8080C0;
+    qproperty-line-fg-import-name: #FF0080;
+    qproperty-line-fg-segment-name: yellow;
+    qproperty-line-fg-dummy-unknown-name: silver;
+    qproperty-line-fg-code-name: #FF0080;
+    qproperty-line-fg-unknown-name: yellow;
+    qproperty-line-fg-collapsed-line: yellow;
+    qproperty-line-bg-default: black;
+    qproperty-line-bg-selected: silver;
+    qproperty-line-pfx-func: silver;
+    qproperty-line-pfx-insn: gray;
+    qproperty-line-pfx-data: silver;
+    qproperty-line-pfx-unexplored: gray;
+    qproperty-line-bgovl-current-line: rgba(0, 0, 0, 0.149020);
+    qproperty-line-pfx-current-line: #FFFF00;
+}
+
+CustomIDAMemo[hints="true"]
+{
+    qproperty-line-fg-default: yellow;
+    qproperty-line-fg-regular-comment: #0080C0;
+    qproperty-line-fg-repeatable-comment: silver;
+    qproperty-line-fg-automatic-comment: #0080C0;
+    qproperty-line-fg-insn: silver;
+    qproperty-line-fg-dummy-data-name: silver;
+    qproperty-line-fg-regular-data-name: #FFFF7F;
+    qproperty-line-fg-demangled-name: #0080C0;
+    qproperty-line-fg-punctuation: silver;
+    qproperty-line-fg-charlit-in-insn: lime;
+    qproperty-line-fg-numlit-in-insn: #55FFFF;
+    qproperty-line-fg-void-opnd: red;
+    qproperty-line-fg-code-xref: lime;
+    qproperty-line-fg-data-xref: #55FFFF;
+    qproperty-line-fg-error: red;
+    qproperty-line-fg-opcode-byte: white;
+    qproperty-line-fg-extra-line: yellow;
+    qproperty-line-fg-alt-opnd: white;
+    qproperty-line-fg-hidden: silver;
+    qproperty-line-fg-libfunc: #55FFFF;
+    qproperty-line-fg-locvar: lime;
+    qproperty-line-fg-dummy-code-name: teal;
+    qproperty-line-fg-asm-directive: yellow;
+    qproperty-line-fg-macro: #8080FF;
+    qproperty-line-fg-strlit-in-data: lime;
+    qproperty-line-fg-charlit-in-data: lime;
+    qproperty-line-fg-numlit-in-data: #55FFFF;
+    qproperty-line-fg-keyword: silver;
+    qproperty-line-fg-register-name: #8080C0;
+    qproperty-line-fg-import-name: #FF0080;
+    qproperty-line-fg-segment-name: yellow;
+    qproperty-line-fg-dummy-unknown-name: silver;
+    qproperty-line-fg-code-name: #FF0080;
+    qproperty-line-fg-unknown-name: yellow;
+    qproperty-line-fg-collapsed-line: yellow;
+    qproperty-line-bg-default: #2C0E16;
+    qproperty-line-bg-selected: silver;
+    qproperty-line-pfx-func: silver;
+    qproperty-line-pfx-insn: gray;
+    qproperty-line-pfx-data: silver;
+    qproperty-line-pfx-unexplored: gray;
+    qproperty-line-bgovl-current-line: rgba(0, 0, 0, 0.149020);
+    qproperty-line-pfx-current-line: #FFFF00;
+}
+
+navband_t
+{
+    qproperty-extern: fuchsia;
+}
+
+TCpuRegs ui_label_t
+{
+    color: #ffff00;
+}
+
+TCpuRegs
+{
+    color: #FFFF00;
+    /* text: #FFFF00; */
+    /* text-color: #FFFF00; */
+    background-color: #000000;
+    qproperty-register-defined: #7A7A7A;
+    qproperty-register-changed: #8080FF;
+    qproperty-register-edited: #ffff00;
+    qproperty-register-unavailable: #7A7A7A;
+   /* qproperty-register-unavailable: #ff0000; */
+}

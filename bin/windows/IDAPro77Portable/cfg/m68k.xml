@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE target SYSTEM "gdb-target.dtd">
+<target>
+  <architecture>m68k</architecture>
+  <xi:include href="m68k-core.xml"/>
+</target>

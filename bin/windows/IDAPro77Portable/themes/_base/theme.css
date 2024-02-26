@@ -1,0 +1,360 @@
+
+@def base_highlight_color rgba(255, 255, 0, 0.80);
+
+DockWidgetTitle
+{
+    padding: 0px;
+    margin-bottom: 2px;
+}
+
+DockAreaDragTitle
+{
+    background-color: palette(dark);
+}
+
+DockWidgetTitle[active="true"]
+{
+    background-color: palette(base);
+}
+
+DockWidgetTitle > QPushButton,
+DockAreaDragTitle > QPushButton
+{
+    min-width: 20px;
+    min-height: 20px;
+}
+
+DockWidgetTitle > QPushButton:!hover,
+DockAreaDragTitle > QPushButton:!hover
+{
+    border: none;
+}
+
+chooser_widget_t,
+standalone_dirtree_widget_t
+{
+    qproperty-highlight-bg-default: ${base_highlight_color};
+    qproperty-highlight-bg-selected: rgba(0, 192, 192, 0.80);
+
+    qproperty-cut-text-color-default : silver;
+    qproperty-cut-text-color-selected : grey;
+}
+
+chooser_widget_t[os-dark-theme="true"],
+standalone_dirtree_widget_t[os-dark-theme="true"]
+{
+    qproperty-highlight-bg-default: red;
+    qproperty-highlight-bg-selected: pink;
+
+    qproperty-cut-text-color-default : darkgrey;
+    qproperty-cut-text-color-selected : grey;
+}
+
+log_widget_t
+{
+    color            : black;
+    background-color : white;
+}
+
+log_widget_t[os-dark-theme="true"]
+{
+    color: #ddd;
+    background-color: #2d2d2d;
+}
+
+text_area_t
+{
+    qproperty-keyword1-fg: blue;
+    qproperty-keyword1-weight: 0;
+    qproperty-keyword1-italic: 0;
+
+    qproperty-keyword2-fg: purple;
+    qproperty-keyword2-weight: 0;
+    qproperty-keyword2-italic: 0;
+
+    qproperty-keyword3-fg: red;
+    qproperty-keyword3-weight: 0;
+    qproperty-keyword3-italic: 0;
+
+    qproperty-string-fg: darkred;
+    qproperty-string-weight: 0;
+    qproperty-string-italic: 0;
+
+    qproperty-comment-fg: darkgreen;
+    qproperty-comment-weight: 0;
+    qproperty-comment-italic: 1;
+
+    qproperty-preprocessor-fg: blue;
+    qproperty-preprocessor-weight: 1;
+    qproperty-preprocessor-italic: 0;
+
+    qproperty-number-fg: darkcyan;
+    qproperty-number-weight: 1;
+    qproperty-number-italic: 0;
+}
+
+text_area_t text_area_margin_widget_t
+{
+    color: grey;
+    qproperty-header-color: dimgrey;
+}
+
+text_area_dialog_t QLabel#counter_label
+{
+    color: grey;
+}
+
+text_area_dialog_t QLabel#counter_label[invalid=true]
+{
+    color: red;
+}
+
+@def darkening 125;
+@def lightening 125;
+
+@def diff_region_pick   #8AD1A9; /* light green */
+@def diff_region_pick_l @lighten(${diff_region_pick}, ${lightening});
+@def diff_region_pick_d @darken(${diff_region_pick}, ${darkening});
+
+@def diff_region_leave   silver;
+@def diff_region_leave_l @lighten(${diff_region_leave}, ${lightening});
+@def diff_region_leave_d @darken(${diff_region_leave}, ${darkening});
+
+@def diff_region_conflict   #FF7C4C; /* light orange/red */
+@def diff_region_conflict_l @lighten(${diff_region_conflict}, ${lightening});
+@def diff_region_conflict_d @darken(${diff_region_conflict}, ${darkening});
+
+/* make that guy behave as if it were a regular widget, by killing the default QGroupBox spacing */
+LabeledWidgetContainer
+{
+    border: 0;
+    padding: 0;
+}
+
+QSplitter::handle:horizontal
+{
+    width: 4px;
+}
+
+QSplitter::handle:vertical
+{
+    height: 4px;
+}
+
+ActionsInspector QLineEdit
+{
+    width: 16em;
+}
+
+ActionsInspector QKeySequenceEdit
+{
+    width: 16em;
+}
+
+CustomIDAMemo
+{
+    /* misc */
+    qproperty-line-fg-patched-bytes     : #804040;                   /* patched bytes (brown-ish) */
+    qproperty-line-fg-unsaved-changes   : #FF8000;                   /* unsaved changes (orange-ish) */
+    qproperty-line-bg-highlight         : ${base_highlight_color};   /* highlighting background */
+    qproperty-line-bg-highlight-2       : rgba(255, 192, 128, 0.80); /* highlighting background #2 */
+    qproperty-line-bg-highlight-3       : rgba(255, 128, 255, 0.80); /* highlighting background #3 */
+    qproperty-line-bg-highlight-4       : rgba(128, 255, 255, 0.80); /* highlighting background #4 */
+    qproperty-line-bg-highlight-5       : rgba(192, 128, 128, 0.80); /* highlighting background #5 */
+    qproperty-line-bg-highlight-6       : rgba(128, 192, 128, 0.80); /* highlighting background #6 */
+    qproperty-line-bg-highlight-7       : rgba(128, 128, 192, 0.80); /* highlighting background #7 */
+    qproperty-line-bg-highlight-8       : rgba(208, 208, 208, 0.80); /* highlighting background #8 */
+    qproperty-line-pfx-current-item     : rgba(0, 0, 0, 0);          /* Line prefix: Current item (transparent by default) */
+    qproperty-line-bgovl-current-line   : rgba(80, 80, 80, 0.15);    /* current line background overlay */
+    qproperty-line-bgovl-trace          : rgba(255, 255, 0, 0.20);   /* Trace line background overlay */
+    qproperty-line-bgovl-trace-ovl      : rgba(255, 188, 180, 0.40); /* Second trace line background overlay */
+    qproperty-line-bgovl-extra-1        : rgba(80, 255, 80, 0.25);   /* Extra background overlay #1 */
+    qproperty-line-bgovl-extra-2        : rgba(238, 255, 136, 0.25); /* Extra background overlay #2 */
+    qproperty-line-bgovl-extra-3        : rgba(255, 170, 0, 0.4);    /* Extra background overlay #3 */
+    qproperty-line-bgovl-extra-4        : rgba(255, 126, 232, 0.4);  /* Extra background overlay #4 */
+    qproperty-line-bgovl-extra-5        : rgba(219, 150, 69, 0.4);   /* Extra background overlay #5 */
+    qproperty-line-bgovl-extra-6        : rgba(69, 207, 219, 0.4);   /* Extra background overlay #6 */
+    qproperty-line-bgovl-extra-7        : rgba(143, 219, 69, 0.4);   /* Extra background overlay #7 */
+    qproperty-line-bgovl-extra-8        : rgba(86, 88, 126, 0.4);    /* Extra background overlay #8 */
+    qproperty-line-bgovl-extra-9        : rgba(217, 90, 111, 0.4);   /* Extra background overlay #9 */
+    qproperty-line-bgovl-extra-10       : rgba(128, 147, 132, 0.4);  /* Extra background overlay #10 */
+    qproperty-line-bgovl-extra-11       : rgba(255, 0, 120, 0.4);    /* Extra background overlay #11 */
+    qproperty-line-bgovl-extra-12       : rgba(255, 192, 0, 0.4);    /* Extra background overlay #12 */
+    qproperty-line-bgovl-extra-13       : rgba(255, 192, 255, 0.4);  /* Extra background overlay #13 */
+    qproperty-line-bgovl-extra-14       : rgba(133, 133, 133, 0.4);  /* Extra background overlay #14 */
+    qproperty-line-bgovl-extra-15       : rgba(203, 210, 166, 0.4);  /* Extra background overlay #15 */
+    qproperty-line-bgovl-extra-16       : rgba(0, 90, 0, 0.4);       /* Extra background overlay #16 */
+
+    /* graph */
+    qproperty-graph-bg-top              : white;
+    qproperty-graph-bg-bottom           : #E0F8FF;
+    qproperty-graph-node-title-normal   : white;
+    qproperty-graph-node-title-selected : #B1F9F9;
+    qproperty-graph-node-title-current  : #A0CFCF;
+    qproperty-graph-node-frame-group    : yellow;
+    qproperty-graph-node-shadow         : black;
+    qproperty-graph-node-high1          : #CCFFFF;
+    qproperty-graph-node-high2          : #CCFFCC;
+    qproperty-graph-node-foreign        : red;
+    qproperty-graph-edge-normal         : blue;
+    qproperty-graph-edge-yes            : green;
+    qproperty-graph-edge-no             : red;
+    qproperty-graph-edge-high           : fuchsia;
+    qproperty-graph-edge-current        : cyan;
+
+    /* bpts */
+    qproperty-line-bg-bpt-enabled        : red;
+    qproperty-line-bg-bpt-disabled       : lime;
+    qproperty-line-bg-bpt-unavailable    : #FF8000;
+
+    /* diff/merge */
+    qproperty-line-bgovl-diff-region-pick:             ${diff_region_pick_l};
+    qproperty-line-bgovl-diff-region-leave:            ${diff_region_leave_l};
+    qproperty-line-bgovl-diff-region-conflict:         ${diff_region_conflict_l};
+
+    qproperty-line-bgovl-diff-region-pick-current:     ${diff_region_pick};
+    qproperty-line-bgovl-diff-region-leave-current:    ${diff_region_leave};
+    qproperty-line-bgovl-diff-region-conflict-current: ${diff_region_conflict};
+
+    /* bookmarks */
+    qproperty-line-bgovl-bookmark:      rgba(0, 255, 128, 0.125);
+    qproperty-bookmark-star-outline:    rgba(0, 255, 128, 0.45);
+}
+
+CustomIDAMemo[debugging="true"]
+{
+    qproperty-line-bg-default            : #CCFFFF;
+    qproperty-line-bgovl-current-ip      : rgba(0, 195, 255, .45);
+}
+
+CustomIDAMemo[hints="true"]
+{
+    qproperty-line-bg-default            : #FFFFE1;         /* hints background (pale yellow) */
+}
+
+TextArrows
+{
+    qproperty-jump-in-function          : silver;
+    qproperty-jump-external-to-function : red;
+    qproperty-jump-under-cursor         : black;
+    qproperty-jump-target               : green;
+    qproperty-register-target           : #4040FF;
+    qproperty-bpt-possible              : #60D0FF;
+}
+
+TCpuRegs
+{
+    background-color: #CCFFFF;
+    qproperty-register-defined: black;
+    qproperty-register-changed: blue;
+    qproperty-register-edited: purple;
+    qproperty-register-unavailable: gray;
+}
+
+TCpuRegs QPushButton
+{
+    background: transparent;
+}
+
+TCpuRegs ui_label_t
+{
+    color: blue;
+}
+
+TCpuRegs[os-dark-theme="true"]
+{
+    background-color: #4D4D4D;
+    qproperty-register-defined: white;
+    qproperty-register-changed: #FFFF7F;
+    qproperty-register-edited: #FF7F17;
+    qproperty-register-unavailable: #808080;
+}
+
+TCpuRegs ui_label_t[os-dark-theme="true"]
+{
+    color: #AAAAAA;
+}
+
+navband_t
+{
+    qproperty-lib-function : #AAFFFF;
+    qproperty-function : #00A2E8;
+    qproperty-code : #B97A57;
+    qproperty-data : silver;
+    qproperty-undefined : #B6B66B;
+    qproperty-extern : #FFA6FF;
+    qproperty-lumina-function : #32CD32;
+
+    qproperty-hl-lib-function : #C3FFFF;
+    qproperty-hl-function : #3CC4FF;
+    qproperty-hl-code : #CDA189;
+    qproperty-hl-data : #D2D2D2;
+    qproperty-hl-undefined : #CBCB97;
+    qproperty-hl-extern : #FFC0FF;
+    qproperty-hl-lumina-function : #6FDB6F;
+
+    qproperty-hl-outline : #FF0080;
+
+    qproperty-error : #FF5B5B;
+    qproperty-gap : black;
+    qproperty-cursor : #FFFF7F;
+    qproperty-auto-analysis-cursor : #FFAA00;
+}
+
+navband_t[os-dark-theme="true"]
+{
+    qproperty-lib-function: #00aaff;
+    qproperty-function: #ffaa00;
+    qproperty-code: #800000;
+    qproperty-data: #ebebb9;
+    qproperty-undefined: #787800;
+    qproperty-extern: #ff00ff;
+    qproperty-lumina-function: #32cd32;
+
+    qproperty-hl-lib-function: #4cc3fe;
+    qproperty-hl-function: #fec34c;
+    qproperty-hl-code: #f20000;
+    qproperty-hl-data: #f1f1ce;
+    qproperty-hl-undefined: #ecec00;
+    qproperty-hl-extern: #fe4cfe;
+    qproperty-hl-lumina-function: #6fdb6f;
+
+    qproperty-hl-outline : cyan;
+
+    qproperty-error: #ca0000;
+    qproperty-gap: #4a4a4a;
+    qproperty-cursor: #80ff00;
+    qproperty-auto-analysis-cursor: #ff8000;
+}
+
+TChooser,
+generic_dirtree_widget_t
+{
+    qproperty-highlight-bg-diff-region-pick:             ${diff_region_pick_l};
+    qproperty-highlight-bg-diff-region-leave:            ${diff_region_leave_l};
+    qproperty-highlight-bg-diff-region-conflict:         ${diff_region_conflict_l};
+
+    qproperty-highlight-bg-diff-region-pick-current:     ${diff_region_pick};
+    qproperty-highlight-bg-diff-region-leave-current:    ${diff_region_leave};
+    qproperty-highlight-bg-diff-region-conflict-current: ${diff_region_conflict};
+}
+
+diff_fringe_t
+{
+    background-color: white;
+
+    qproperty-diff-region-pick:                             ${diff_region_pick_l};
+    qproperty-diff-region-pick-boundaries:                  ${diff_region_pick_l};
+    qproperty-diff-region-pick-current:                     ${diff_region_pick};
+    qproperty-diff-region-pick-current-boundaries:          ${diff_region_pick_d};
+
+    qproperty-diff-region-leave:                            ${diff_region_leave_l};
+    qproperty-diff-region-leave-boundaries:                 ${diff_region_leave_l};
+    qproperty-diff-region-leave-current:                    ${diff_region_leave};
+    qproperty-diff-region-leave-current-boundaries:         ${diff_region_leave_d};
+
+    qproperty-diff-region-conflict:                         ${diff_region_conflict_l};
+    qproperty-diff-region-conflict-boundaries:              ${diff_region_conflict_l};
+    qproperty-diff-region-conflict-current:                 ${diff_region_conflict};
+    qproperty-diff-region-conflict-current-boundaries:      ${diff_region_conflict_d};
+}

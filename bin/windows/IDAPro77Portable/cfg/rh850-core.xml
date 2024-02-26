@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE feature SYSTEM "gdb-target.dtd">
+<feature name="rh850.core">
+  <reg name="r0" bitsize="32" />
+  <reg name="r1" bitsize="32" />
+  <reg name="r2" bitsize="32" />
+  <reg name="r3" bitsize="32" />
+  <reg name="r4" bitsize="32" />
+  <reg name="r5" bitsize="32" />
+  <reg name="r6" bitsize="32" />
+  <reg name="r7" bitsize="32" />
+  <reg name="r8" bitsize="32" />
+  <reg name="r9" bitsize="32" />
+  <reg name="r10" bitsize="32" />
+  <reg name="r11" bitsize="32" />
+  <reg name="r12" bitsize="32" />
+  <reg name="r13" bitsize="32" />
+  <reg name="r14" bitsize="32" />
+  <reg name="r15" bitsize="32" />
+  <reg name="r16" bitsize="32" />
+  <reg name="r17" bitsize="32" />
+  <reg name="r18" bitsize="32" />
+  <reg name="r19" bitsize="32" />
+  <reg name="r20" bitsize="32" />
+  <reg name="r21" bitsize="32" />
+  <reg name="r22" bitsize="32" />
+  <reg name="r23" bitsize="32" />
+  <reg name="r24" bitsize="32" />
+  <reg name="r25" bitsize="32" />
+  <reg name="r26" bitsize="32" />
+  <reg name="r27" bitsize="32" />
+  <reg name="r28" bitsize="32" />
+  <reg name="r29" bitsize="32" />
+  <reg name="r30" bitsize="32" />
+  <reg name="r31" bitsize="32" />
+  <reg name="eipc" bitsize="32" />
+  <reg name="eipsw" bitsize="32" />
+  <reg name="fepc" bitsize="32" />
+  <reg name="fepsw" bitsize="32" />
+  <reg name="ecr" bitsize="32" />
+  <reg name="psw" bitsize="32" />
+  <reg name="sr6" bitsize="32"/>
+  <reg name="sr7" bitsize="32"/>
+  <reg name="sr8" bitsize="32"/>
+  <reg name="sr9" bitsize="32"/>
+  <reg name="sr10" bitsize="32"/>
+  <reg name="sr11" bitsize="32"/>
+  <reg name="sr12" bitsize="32"/>
+  <reg name="sr13" bitsize="32"/>
+  <reg name="sr14" bitsize="32"/>
+  <reg name="sr15" bitsize="32"/>
+  <reg name="sr16" bitsize="32"/>
+  <reg name="sr17" bitsize="32"/>
+  <reg name="sr18" bitsize="32"/>
+  <reg name="sr19" bitsize="32"/>
+  <reg name="sr20" bitsize="32"/>
+  <reg name="sr21" bitsize="32"/>
+  <reg name="sr22" bitsize="32"/>
+  <reg name="sr23" bitsize="32"/>
+  <reg name="sr24" bitsize="32"/>
+  <reg name="sr25" bitsize="32"/>
+  <reg name="sr26" bitsize="32"/>
+  <reg name="sr27" bitsize="32"/>
+  <reg name="sr28" bitsize="32"/>
+  <reg name="sr29" bitsize="32"/>
+  <reg name="sr30" bitsize="32"/>
+  <reg name="sr31" bitsize="32"/>
+  <reg name="pc" bitsize="32" />
+</feature>

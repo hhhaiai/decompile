@@ -1,0 +1,2 @@
+Culture_Latin_Extended_A,
+-u0200..uFFFF; // our metablock contains many unwanted chars. Perhaps we should get rid of those metablocks, if they start playing with our feet?

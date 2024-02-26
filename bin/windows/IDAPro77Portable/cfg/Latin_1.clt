@@ -1,0 +1,16 @@
+Culture_Latin_1_Supplement & Category_Ll,
+Culture_Latin_1_Supplement & Category_Lu,
+
+// those come from the 0x8? and 0x9? ranges from https://en.wikipedia.org/wiki/Windows-1252
+u0192,
+u0160,
+u0152,
+u017D,
+u0161,
+u0153,
+u017E,
+u0178,
+
+// u00A1, // INVERTED EXCLAMATION MARK
+// u00BF, // INVERTED QUESTION MARK
+-u00FF; // LATIN SMALL LETTER Y WITH DIAERESIS (prevents many false positives in automatic string literals)

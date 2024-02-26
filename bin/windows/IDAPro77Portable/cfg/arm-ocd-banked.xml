@@ -1,0 +1,26 @@
+<!DOCTYPE feature SYSTEM "gdb-target.dtd">
+<feature name="net.sourceforge.openocd.banked">
+  <reg name="sp_usr" bitsize="32" regnum="26" type="data_ptr" group="banked"/>
+  <reg name="lr_usr" bitsize="32" regnum="27" type="data_ptr" group="banked"/>
+  <reg name="r8_fiq" bitsize="32" regnum="28" type="data_ptr" group="banked"/>
+  <reg name="r9_fiq" bitsize="32" regnum="29" type="data_ptr" group="banked"/>
+  <reg name="r10_fiq" bitsize="32" regnum="30" type="data_ptr" group="banked"/>
+  <reg name="r11_fiq" bitsize="32" regnum="31" type="data_ptr" group="banked"/>
+  <reg name="r12_fiq" bitsize="32" regnum="32" type="data_ptr" group="banked"/>
+  <reg name="sp_fiq" bitsize="32" regnum="33" type="data_ptr" group="banked"/>
+  <reg name="lr_fiq" bitsize="32" regnum="34" type="data_ptr" group="banked"/>
+  <reg name="sp_irq" bitsize="32" regnum="35" type="data_ptr" group="banked"/>
+  <reg name="lr_irq" bitsize="32" regnum="36" type="data_ptr" group="banked"/>
+  <reg name="sp_svc" bitsize="32" regnum="37" type="data_ptr" group="banked"/>
+  <reg name="lr_svc" bitsize="32" regnum="38" type="data_ptr" group="banked"/>
+  <reg name="sp_abt" bitsize="32" regnum="39" type="data_ptr" group="banked"/>
+  <reg name="lr_abt" bitsize="32" regnum="40" type="data_ptr" group="banked"/>
+  <reg name="sp_und" bitsize="32" regnum="41" type="data_ptr" group="banked"/>
+  <reg name="lr_und" bitsize="32" regnum="42" type="data_ptr" group="banked"/>
+
+  <reg name="spsr_fiq" bitsize="32" regnum="43" type="data_ptr" group="banked"/>
+  <reg name="spsr_irq" bitsize="32" regnum="44" type="data_ptr" group="banked"/>
+  <reg name="spsr_svc" bitsize="32" regnum="45" type="data_ptr" group="banked"/>
+  <reg name="spsr_abt" bitsize="32" regnum="46" type="data_ptr" group="banked"/>
+  <reg name="spsr_und" bitsize="32" regnum="47" type="data_ptr" group="banked"/>
+</feature>

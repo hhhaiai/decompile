@@ -1,0 +1,12 @@
+u2000..u206F,
+u2F00..u2FDF,   // Kangxi Radicals Block
+u3000..u303F,
+u31C0..u31EF,   // CJK Strokes
+u3400..u4DBF,   // CJK Unified Ideographs Extension A Block
+u4E00..u9FFF,   // CJK Unified Ideographs
+uF900..uFAFF,   // CJK Compatibility Ideographs Block
+uFE30..uFE4F,   // CJK Compatibility Forms Block
+u20000..u2A6DF, // CJK Unified Ideographs Extension B Block
+u2A700..u2BA7F, // CJK Unified Ideographs Extension C Block
+u2B740..u2B81F, // CJK Unified Ideographs Extension D Block
+u2F800..u2FA1F; // CJK Compatibility Ideographs Supplement Block

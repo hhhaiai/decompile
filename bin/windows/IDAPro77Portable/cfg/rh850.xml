@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE target SYSTEM "gdb-target.dtd">
+<target>
+  <architecture>rh850</architecture>
+  <xi:include href="rh850-core.xml"/>
+</target>
