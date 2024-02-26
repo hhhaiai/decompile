@@ -1,0 +1,72 @@
+https://wuxianlin.com/2019/03/22/android-reverse-engineering/
+
+刷机包
+sparse img -> ext4 img
+线刷包里面找到system.img/vendor.img
+
+$ file system.img
+system.img: Android sparse image, version: 1.0, Total of 849920 4096-byte output blocks in 2454 input chunks.
+使用Android源码编译得到out/host/linux-x86/bin/simg2img即可将Android的sparse image转为ext4的image
+
+dat -> ext4 img
+system.new.dat.br转system.new.dat
+brotli –decompress system.new.dat.br –output=system.new.dat
+
+system.new.dat system.patch.dat system.transfer.list转ext4 img
+https://github.com/xpirt/sdat2img
+
+payload dump
+https://gist.github.com/ius/42bd02a5df2226633a342ab7a9c60f15
+
+odex/oat/vdex
+Android <=4.4 odex to dex
+
+https://github.com/JesusFreke/smali/wiki/DeodexInstructions
+https://bitbucket.org/JesusFreke/smali/downloads/
+
+Android <=7 oat to dex
+
+https://github.com/testwhat/SmaliEx/releases
+https://github.com/testwhat/SmaliEx
+https://github.com/JesusFreke/smali/wiki/DeodexInstructions
+https://bitbucket.org/JesusFreke/smali/downloads/
+
+Android 8 vdex to dex
+
+https://github.com/anestisb/vdexExtractor
+
+Android 9 vdex->cdex->dex
+
+https://github.com/anestisb/vdexExtractor
+https://github.com/anestisb/vdexExtractor/issues/23
+tools/deodex/run.sh -h
+
+dex
+dex转smali
+apktool工具 针对 apk包括dex和资源
+
+https://github.com/iBotPeaches/Apktool
+https://ibotpeaches.github.io/Apktool/
+
+baksmali、smali 针对dex
+
+https://github.com/JesusFreke/smali
+https://bitbucket.org/JesusFreke/smali/downloads/
+
+dex转jar/java
+googe enjarify工具dex转jar
+
+https://github.com/google/enjarify
+
+dex2jar
+
+https://github.com/pxb1988/dex2jar
+https://github.com/pxb1988/dex2jar/releases
+
+结合jd-gui
+
+https://github.com/java-decompiler/jd-gui
+http://jd.benow.ca/
+
+二合一工具
+https://github.com/skylot/jadx

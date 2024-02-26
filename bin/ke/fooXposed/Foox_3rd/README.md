@@ -1,1 +1,0 @@
-Show how to hook load so files.

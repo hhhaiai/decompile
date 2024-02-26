@@ -1,0 +1,4 @@
+https://github.com/hhhaiai/decompile/releases/tag/2.0
+
+simplify-1.2.0.jar.zip
+smalivm-1.2.0.jar.zip

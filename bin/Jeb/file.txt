@@ -1,0 +1,8 @@
+https://github.com/hhhaiai/decompile/releases/tag/2.0
+
+jeb_4.19.0.202208250333.zip
+jeb-4.16.0.zip
+jeb-4.19.1.202209162154.zip
+jeb-4.20.0.202210051834.zip
+
+
